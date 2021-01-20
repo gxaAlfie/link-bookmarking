@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Link Bookmarker",
+  "description": "Saves links similar to bookmarks to be processed by other applications.",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://link-bookmarking-api.herokuapp.com/api/v1/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
